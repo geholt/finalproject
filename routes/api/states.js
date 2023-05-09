@@ -23,7 +23,6 @@ router.route('/:state').get((req, res) => {
 
 router.route('/:state/capital').get((req, res) => {
   const requestedState = findState(req.params.state);
-
   if (!requestedState) {
     res.json({"message": "Invalid state abbreviation parameter"});
   }
@@ -34,7 +33,6 @@ router.route('/:state/capital').get((req, res) => {
 
 router.route('/:state/nickname').get((req, res) => {
   const requestedState = findState(req.params.state);
-
   if (!requestedState) {
     res.json({"message": "Invalid state abbreviation parameter"});
   }
@@ -45,7 +43,6 @@ router.route('/:state/nickname').get((req, res) => {
 
 router.route('/:state/population').get((req, res) => {
   const requestedState = findState(req.params.state);
-
   if (!requestedState) {
     res.json({"message": "Invalid state abbreviation parameter"});
   }
@@ -56,7 +53,6 @@ router.route('/:state/population').get((req, res) => {
 
 router.route('/:state/admission').get((req, res) => {
   const requestedState = findState(req.params.state);
-
   if (!requestedState) {
     res.json({"message": "Invalid state abbreviation parameter"});
   }
@@ -67,7 +63,6 @@ router.route('/:state/admission').get((req, res) => {
 
 router.route('/:state/funfact').get((req, res) => {
   const requestedState = findState(req.params.state);
-
   if (!requestedState) {
     res.json({"message": "Invalid state abbreviation parameter"});
   }
@@ -80,7 +75,6 @@ router.route('/:state/funfact').get((req, res) => {
 });
 
 // POST state requests
-
 router.route('/:state/funfact').post((req, res) => {
 
 });
