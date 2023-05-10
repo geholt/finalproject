@@ -74,13 +74,11 @@ router.route('/:state/funfact').get((req, res) => {
   }
 });
 
-// POST state requests
+// POST
 router.route('/:state/funfact').post((req, res) => {
 
 });
 
-
-// Router Helper Methods
 const getAllStates = (req, res) => {
   let states = data.states;
 
@@ -89,8 +87,7 @@ const getAllStates = (req, res) => {
   } 
   else if (req.query.contig === 'false') {
     states = data.states.filter(state => state.code === 'AK' || state.code === 'HI');
-  }
-  
+  }  
   res.json(states);
 };
 
